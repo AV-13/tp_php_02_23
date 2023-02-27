@@ -1,0 +1,336 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap') format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap') format('woff2');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+}
+
+a {
+  color: inherit;
+}
+
+.backgroundPhoto {
+  background-image: url('../images/paris.jpg');
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Styles de la barre de navigation */
+nav {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+nav ol {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+nav ol li a {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 10px;
+}
+
+nav ol li a:hover {
+  color: #E84C3D;
+}
+
+nav ol li.logo a {
+  font-size: 24px;
+  font-weight: 900;
+  color: #E84C3D;
+}
+
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  padding-right: 20px;
+}
+
+.affichageCard {
+  display: flex;
+  justify-content: space-around;
+  height: 50%;
+}
+
+.affichageConsulterCard {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card-body {
+  width: 280px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 40px;
+}
+
+.card-body img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body .title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card-body p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 10px;
+}
+
+.card-body .price {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px;
+  color: #E84C3D;
+}
+
+.card-body .btn {
+  display: block;
+  background-color: #E84C3D;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px;
+  transition: all 0.5s ease-out;
+}
+
+.card-body .btnRes {
+  display: block;
+  background-color: darkgrey;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px;
+}
+
+.card-body .btn:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+footer a {
+  color: #E84C3D;
+}
+
+.formulaire {
+  max-width: 800px;
+  max-height: 800px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.formulaire form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.formulaire label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.formulaire input[type="text"],
+.formulaire textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.formulaire input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.formulaire input[type="submit"]:hover {
+  transform: scale(1.05);
+}
+
+
+.formulaire input[type="file"] {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.formulaire select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.formulaire textarea {
+  height: 150px;
+}
+
+.ficheBody {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.ficheContainer img {
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.ficheBody h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
+.ficheBody p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin: 10px 0px 10px 0px;
+}
+
+.ficheCP {
+  font-weight: 700;
+}
+
+.ficheVille {
+  font-weight: 700;
+}
+
+.ficheType {
+  font-weight: 700;
+}
+
+.styleDesc {
+  font-weight: 700;
+  font-style: normal;
+  color: #E84C3D;
+}
+
+.ficheDesc {
+  font-style: italic;
+}
+
+.fichePrice {
+  font-weight: 700;
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.resMessage {
+  width: 400px;
+  height: 300px;
+}
+
+.ficheBody .formulaire {
+  height: 500px;
+  width: 500px;
+}
+
+.ficheBody .formulaire form {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ficheBody .formulaire form textarea {
+  height: 300px;
+  width: 300px;
+}
